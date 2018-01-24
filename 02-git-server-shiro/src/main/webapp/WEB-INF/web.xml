@@ -52,7 +52,7 @@
 
     <servlet>
         <servlet-name>GitServlet</servlet-name>
-        <servlet-class>com.majun.git.servlet.GitServlet</servlet-class>
+        <servlet-class>com.majun.git.GitServlet</servlet-class>
         <init-param>
             <param-name>base-path</param-name>
             <param-value>/Users/majun/git-repos-test</param-value>
