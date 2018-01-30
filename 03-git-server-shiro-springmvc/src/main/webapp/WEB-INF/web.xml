@@ -23,8 +23,19 @@
         </init-param>
     </filter>
 
+    <filter>
+        <filter-name>vueFilter</filter-name>
+        <filter-class>com.majun.git.filter.VueFilter</filter-class>
+        <async-supported>true</async-supported>
+    </filter>
+
     <filter-mapping>
         <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>vueFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
